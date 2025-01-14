@@ -1,5 +1,6 @@
 def main() -> None:
     """Main Logic"""
+
     # Asking for a user to input something
     user_input: str = input()
 
@@ -9,6 +10,7 @@ def main() -> None:
 
 def convert(input: str) -> str:
     """Convert string to an appropriate emoji"""
+
     # replacing :) and :( emotions with 🙂 and 🙁 emoji respectively
     input = "🙂".join(input.split(":)"))
     input = "🙁".join(input.split(":("))

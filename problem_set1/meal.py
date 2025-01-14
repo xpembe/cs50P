@@ -1,4 +1,6 @@
 def main() -> None:
+    """Main Logic"""
+
     # Asking the user for the present time
     time_str: str = input("What time is it? ").strip()
     time: float = convert(time_str)
@@ -14,8 +16,10 @@ def main() -> None:
         print("Dinner time")
 
 
-# Convert the string time to a decimal number
 def convert(time: str) -> float:
+    """Convert string time to a decimal time"""
+
+    # Return the decimal time
     return float(time.replace(":", "."))
 
 
